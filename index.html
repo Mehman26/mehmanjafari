@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>vCard - Personal Portfolio</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+
+    <!--
+    - #MAIN
+    -->
+    <main>
+
+      <!--
+      - #SIDEBAR
+      -->
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img
+              src="./assets/images/my-avatar.png"
+              alt="Richard hanrick"
+              width="80"
+            />
+          </figure>
+
+          <div class="info-content">
+            <h1 class="name" title="Richard hanrick">Мехман Джафари</h1>
+
+            <p class="title">Фронтенд разработчик</p>
+          </div>
+
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Показать контакты</span>
+
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
+        </div>
+
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
+
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Почта</p>
+
+                <a href="mailto:mehmandjafari@mail.ru" class="contact-link"
+                  >mehmandjafari@mail.ru</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Телефон</p>
+
+                <a href="tel:+7771749526" class="contact-link"
+                  >+7 (771) 574-9526</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="calendar-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">День рождение</p>
+
+                <time datetime="1982-06-23">Октябрь 26, 2006</time>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Локация</p>
+
+                <address>Туркестанская область, Шымкент, KZ</address>
+              </div>
+            </li>
+          </ul>
+          <div class="separator"></div>
+          <button class="admin-btn" type="submit" data-admin-btn>
+            <ion-icon name="key-outline"></ion-icon>
+            <span>Админ панель</span>
+          </button>
+          <div class="separator"></div>
+          <ul class="social-list">
+            <li class="social-item">
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a
+                href="https://www.instagram.com/mehmanjafari2024/"
+                target="_blank"
+                class="social-link"
+              >
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+            <li class="social-item">
+              <a href="#" class="social-link">
+                <ion-icon name="logo-whatsapp"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <!--
+      - #main-content
+      -->
+      <div class="main-content">
+        <!--
+        - #NAVBAR
+        -->
+
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>Обо мне</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Резюме</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Портфолио</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Блог</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Контакты</button>
+            </li>
+          </ul>
+        </nav>
+
+        <!--
+        - #ABOUT
+        -->
+        <article class="about active" data-page="обо мне">
+          <header>
+            <h2 class="h2 article-title">Обо мне</h2>
+          </header>
+
+          <section class="about-text">
+            <p>
+              Привет! Меня зовут Мехман и я фронтенд разработчик с огромным
+              интересом к созданию впечатляющих и интуитивно понятных
+              пользовательских интерфейсов. В моей работе я стараюсь сочетать
+              техническое мастерство с ключевыми soft-skills, такими как
+              коммуникабельность и умение работать в команде.
+            </p>
+            <p>
+              Мое стремление к профессиональному развитию не знает границ.
+              Будучи фрилансером, я постоянно изучаю новые технологии и методы,
+              чтобы быть в курсе последних тенденций в веб-разработке. Однако, я
+              также осознаю ценность работы в коллективе. В компании я могу
+              получить ценный опыт, обмениваться знаниями с коллегами и работать
+              над большими проектами, что вдохновляет меня стать еще более
+              компетентным разработчиком.
+            </p>
+            <p>
+              Моя мотивация в профессиональном росте заключается не только в
+              том, чтобы улучшить свои навыки, но и в желании создавать значимые
+              продукты, которые приносят пользу пользователям. Я верю, что
+              внимание к деталям, а также постоянное стремление к совершенству
+              являются ключевыми факторами успешного развития как на фрилансе,
+              так и в крупных компаниях.
+            </p>
+          </section>
+
+          <section class="service">
+            <h3 class="h3 service-title">Что я делаю</h3>
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-dev.svg"
+                    alt="Web development icon"
+                    width="40"
+                  />
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Веб-разработка</h4>
+                  <p class="service-item-text">
+                    Качественная разработка сайтов на профессиональном уровне.
+                  </p>
+                </div>
+              </li>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-design.svg"
+                    alt="Web desing icon"
+                    width="40"
+                  />
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Веб-дизайн</h4>
+                  <p class="service-item-text">
+                    Могу создать простой функциональный дизайн сайта.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <section class="testimonials">
+            <h3 class="h3 testimonials-title">Рекомендации</h3>
+            <ul class="testimonials-list has-scrollbar">
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/avatar-1.png"
+                      alt="Алексей"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Алексей
+                  </h4>
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Обращаюсь во второй раз, ваша скорость выполнения
+                      поражает. Все выполнено в точности по моим требованиям и
+                      даже более чем я ожидал. Буду обращаться исключительно к
+                      вам в дальнейшем.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <div class="modal-container" data-modal-container>
+            <div class="overlay" data-overlay></div>
+            <section class="testimonials-modal">
+              <button class="modal-close-btn" data-modal-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+              <div class="modal-img-wrapper">
+                <figure class="modal-avatar-box">
+                  <img
+                    src="./assets/images/avatar-1.png"
+                    alt="Daniel lewis"
+                    width="80"
+                    data-modal-img
+                  />
+                </figure>
+
+                <img src="./assets/images/icon-quote.svg" alt="quote icon" />
+              </div>
+              <div class="modal-content">
+                <h4 class="h3 modal-title" data-modal-title>Алексей</h4>
+                <time datatime="2021-06-14">13 Февраля, 2024</time>
+                <div data-modal-text>
+                  <p>
+                    Обращаюсь во второй раз, ваша скорость выполнения поражает.
+                    Все выполнено в точности по моим требованиям и даже более
+                    чем я ожидал. Буду обращаться исключительно к вам в
+                    дальнейшем.
+                  </p>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <section class="clients">
+            <h3 class="h3 clients-title">Клиенты</h3>
+            <ul class="clients-list has-scrollbar">
+              <li class="clients-item">
+                <a href="#">
+                  <img
+                    src="./assets/images/logo-1-color.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
+              <li class="clients-item">
+                <a href="#">
+                  <img
+                    src="./assets/images/logo-2-color.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
+              <li class="clients-item">
+                <a href="#">
+                  <img
+                    src="./assets/images/logo-3-color.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
+              <li class="clients-item">
+                <a href="#">
+                  <img
+                    src="./assets/images/logo-4-color.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
+              <li class="clients-item">
+                <a href="#">
+                  <img
+                    src="./assets/images/logo-5-color.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
+              <li class="clients-item">
+                <a href="#">
+                  <img
+                    src="./assets/images/logo-6-color.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!--
+        - #RESUME
+        -->
+        <article class="resume" data-page="резюме">
+          <header>
+            <h2 class="h2 article-title">Резюме</h2>
+          </header>
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+              <h3 class="h3">Образование</h3>
+            </div>
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Общеобразовательная школа имени Амангельды Село Ходжатогай,
+                  Казахстан
+                </h4>
+                <span>2012 — 2019</span>
+                <p class="timeline-text">
+                  В школе Амангельды, Ходжатогай, учился на средние оценки,
+                  увлекали информатика и физкультура. Изучение информатики
+                  развивало аналитические навыки, физкультура укрепляла здоровье
+                  и дисциплинированность. Эти предметы помогли раскрыть мой
+                  потенциал как ученика и спортсмена, подготовив к будущим
+                  вызовам и достижениям.
+                </p>
+              </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Общеобразовательная школа имени Акпан-Батыра Город Шымкент,
+                  Казахстан
+                </h4>
+                <span>2019 — 2021</span>
+                <p class="timeline-text">
+                  В школе Акпан-Батыра в городе Шымкент мой интерес к общению
+                  возрос. В селе я не проявлял общительность, но здесь начал
+                  активнее общаться и взаимодействовать с окружающими. Это
+                  помогло мне развить навыки коммуникации и почувствовать
+                  уверенность в общении с новыми людьми.
+                </p>
+              </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Педагогический колледж "Парасат" имени Мардана Сапарбаева
+                  Город Шымкент, Казахстан
+                </h4>
+                <span>2021 — Учусь</span>
+                <p class="timeline-text">
+                  В колледже "Парасат" в городе Шымкент началось мое обучение
+                  разработке веб-интерфейсов (Frontend). Здесь я получил не
+                  только знания, но и ценный опыт в новом общении, который помог
+                  мне в развитии как специалиста и личности.
+                </p>
+              </li>
+            </ol>
+          </section>
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+              <h3 class="h3">Опыт</h3>
+            </div>
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Gramad "Retail", Шымкент</h4>
+                <span>2022 — 2023</span>
+                <p class="timeline-text">
+                  Я практиковался в должности помощника главного бухгалтера в
+                  продуктовой компании Gramad Retail. В ходе работы использовал
+                  программу 1С и взаимодействовал с базами данных бухгалтерии
+                  компании, что позволило мне приобрести ценный опыт в сфере
+                  бухгалтерии и программирования.
+                </p>
+              </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Фриланс Kwork</h4>
+                <span>2023 — Фрилансю</span>
+                <p class="timeline-text">
+                  Сейчас параллельно обучаюсь и развиваюсь в сфере продаж своих
+                  услуг. Активно работаю над улучшением навыков коммуникации, в
+                  том числе через письменное общение. Этот опыт помогает мне
+                  увереннее представлять и продавать свои услуги, общаясь с
+                  клиентами и партнерами.
+                </p>
+              </li>
+            </ol>
+          </section>
+          <section class="skill">
+            <h3 class="h3 skills-title">Мой скилл</h3>
+            <ul class="skills-list content-card">
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Html / Html5</h5>
+                  <data value="80">80%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%"></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Css / Css3</h5>
+                  <data value="80">80%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%"></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Sass / Scss</h5>
+                  <data value="80">80%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%"></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">JavaScript</h5>
+                  <data value="50">50%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 50%"></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Gulp</h5>
+                  <data value="40">40%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 40%"></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Parcel</h5>
+                  <data value="30">30%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 30%"></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Адаптивная Верстка</h5>
+                  <data value="80">80%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%"></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Отзывчивая Верстка</h5>
+                  <data value="60">60%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 60%"></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">FireBase</h5>
+                  <data value="30">30%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 30%"></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Figma</h5>
+                  <data value="60">60%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 60%"></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Figma</h5>
+                  <data value="60">60%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 60%"></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">БЭМ</h5>
+                  <data value="60">60%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 60%"></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Prepros</h5>
+                  <data value="35">35%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 35%"></div>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!--
+        - #PORTFOLIO
+        -->
+        <article class="portfolio" data-page="портфолио">
+          <header>
+            <h2 class="h2 article-title">Портфолио</h2>
+          </header>
+          <section class="projects">
+            <ul class="filter-list">
+              <li class="filter-item">
+                <button class="active" data-filter-btn>Все</button>
+              </li>
+              <li class="filter-item">
+                <button data-filter-btn>Веб-разработка</button>
+              </li>
+            </ul>
+
+            <div class="filter-select-box">
+              <button class="filter-select" data-select>
+                <div class="select-value" data-selecct-value>
+                  Выберите категорию
+                </div>
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </button>
+              <ul class="select-list">
+                <li class="select-item">
+                  <button data-selecct-item>Все</button>
+                </li>
+                <li class="select-item">
+                  <button data-selecct-item>Веб-разработка</button>
+                </li>
+              </ul>
+            </div>
+
+            <ul class="project-list">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="веб-разработка"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/project-1(ZlatMax).jpg"
+                      alt="ZlatMax"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">ZlatMax</h3>
+                  <p class="project-category">Веб-разработка</p>
+                </a>
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="веб-разработка"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/project-2(Relvise).jpg"
+                      alt="Relvise"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Relvise</h3>
+                  <p class="project-category">Веб-разработка</p>
+                </a>
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="веб-разработка"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/project-3(Bicycle).jpg"
+                      alt="Велосипед"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Велосипед</h3>
+                  <p class="project-category">Веб-разработка</p>
+                </a>
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="веб-разработка"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/project-4(LuxTraider).jpg"
+                      alt="LuxTraider"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">LuxTraider</h3>
+                  <p class="project-category">Веб-разработка</p>
+                </a>
+              </li>
+              <li
+              class="project-item active"
+              data-filter-item
+              data-category="веб-разработка"
+            >
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img
+                    src="./assets/images/project-5(Binary).jpg"
+                    alt="Binary"
+                    loading="lazy"
+                  />
+                </figure>
+                <h3 class="project-title">Binary</h3>
+                <p class="project-category">Веб-разработка</p>
+              </a>
+            </li>
+            </ul>
+          </section>
+        </article>
+
+        <!--
+        - #BLOG
+        -->
+        <article class="blog" data-page="блог">
+          <header>
+            <h2 class="h2 article-title">Блог</h2>
+          </header>
+
+          <section class="blog-posts">
+            <ul class="blog-posts-list">
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-1(GoogleFonts).jpg"
+                      alt="Design conferences in 2022"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Верстка</p>
+                      <span class="dot"></span>
+                      <time datetime="2022-02-23">Февраль 19, 2024</time>
+                    </div>
+                    <h3 class="h3 blog-item-title">
+                      Шрифты бесплатные - Google fonts
+                    </h3>
+                    <p class="blog-text">
+                      Шрифты на Google Fonts абсолютно бесплатны, однако не все
+                      доступны там, а некоторые приходится загружать локально.
+                      Кроме того, помимо возможности загрузки шрифтов, Google
+                      Fonts позволяет подключать их непосредственно в HTML или
+                      CSS код. Я рекомендую осуществлять подключение шрифтов
+                      через CSS, что обеспечивает более гибкий и удобный способ
+                      управления стилями на веб-сайте. Помимо этого, Google
+                      Fonts обеспечивает широкий выбор шрифтов различных стилей
+                      и направлений, что делает его популярным и удобным
+                      инструментом для веб-разработчиков. Пользуйтесь
+                    </p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!--
+        - #CONTACT
+        -->
+        <article class="contact" data-page="контакты">
+          <header>
+            <h2 class="h2 article-title">Контакты</h2>
+          </header>
+
+          <section class="mapbox" data-mapbox>
+            <figure>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d2950.295439752244!2d69.5865775203084!3d42.3148969488037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x38a91ea65d84496b%3A0xeddeb44287215fac!2z0KjRi9C80LrQtdC90YIg0L_Qu9Cw0LfQsCwg0KjRi9C80LrQtdC90YI!3m2!1d42.314856!2d69.588067!5e0!3m2!1sru!2skz!4v1708099912183!5m2!1sru!2skz"
+                width="400"
+                height="300"
+                loading="lazy"
+              ></iframe>
+            </figure>
+          </section>
+
+          <section class="contact-form">
+            <h3 class="h3 form-title">Обратная связь</h3>
+            <form action="#" class="form" data-form>
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="fullname"
+                  class="form-input"
+                  placeholder="Имя"
+                  required
+                  data-form-input
+                />
+                <input
+                  type="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="Почта"
+                  required
+                  data-form-input
+                />
+              </div>
+              <textarea
+                name="message"
+                class="form-input"
+                placeholder="Сообщение"
+                required
+                data-form-input
+              ></textarea>
+              <button class="form-btn" type="submit" data-form-btn disabled>
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Отправить сообщение</span>
+              </button>
+            </form>
+          </section>
+        </article>
+      </div>
+      <div class="admin-modal-container" data-admin-modal-container>
+        <div class="overlay" admin-overlay></div>
+        <section class="admin-open-modal">
+          <button class="admin-modal-close-btn" admin-modal-close-btn>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+          <div class="modal-img-wrapper">
+            <form action="#" class="form" data-form>
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="fullname"
+                  class="form-input"
+                  placeholder="Имя"
+                  required
+                  data-form-input
+                />
+                <input
+                  type="fullsurname"
+                  name="fullsurname"
+                  class="form-input"
+                  placeholder="Фамилия"
+                  required
+                  data-form-input
+                />
+              </div>
+              <input
+                type="password"
+                name="password"
+                class="form-input"
+                placeholder="Пароль"
+                required
+                data-form-input
+              />
+                <button
+                  class="admin-form-btn"
+                  type="submit"
+                  data-form-btn
+                  disabled
+                >
+                  <ion-icon name="paper-plane"></ion-icon>
+                  <span>Войти</span>
+                </button>
+            </form>
+          </div>
+        </section>
+      </div>
+    </main>
+
+
+    <script src="./assets/js/script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
